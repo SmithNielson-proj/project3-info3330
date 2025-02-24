@@ -4,6 +4,7 @@
 *::after {
     box-sizing: border-box;}
 
+
 body {
     font-family: 'Cinzel', serif;
     line-height: 1.6;
@@ -14,20 +15,19 @@ body {
     padding: 0;
 
 }
-
 .container-grid {
     display: grid;
     margin-left: 15px;
     grid-template-rows: auto;
-    grid-template-columns:200px auto;
+    grid-template-columns:200px 1fr;
     grid-template-areas:
         "header header"
         "aside main "
         "footer footer  ";
     min-height: 100vh;
 
-    }
 
+}
 .header {
     grid-area: header;
     text-align: center;
@@ -37,32 +37,19 @@ body {
     margin: 15px;
 }
 
-h1{
-    font-size: 60px;
-    font-variant: small-caps;
-    text-shadow: #2A3526 5px 5px 5px;
-    margin: 15px;
-
-
-}
-h2{
-    text-align: justify;
-}
-
-
 
 .main-content {
     grid-area: main;
     padding: 1rem;
     background-color:#2C3E50;
-
+    height: auto;
+    width: auto ;
 }
 
 aside {
     grid-area: aside;
     background-color: #5E5B4F;
     border-radius: 15px;
-    text-align: justify;
 
     align-self: start;
     height: 100vh;
@@ -88,9 +75,18 @@ aside {
     text-align: center;
 }
 
-
+/* Headings */
+h1{
+    font-size: 60px;
+    font-variant: small-caps;
+    text-shadow: #2A3526 5px 5px 5px;
+    margin: 15px;
+}
+h2{
+    text-align: justify;
+}
+/* navbar junk - prolly can clean this up */
 .navbar ul {
-
     border-radius: 15px;
     margin: 10px 10px;  /* Changed from 15px */
     padding: 15px;
@@ -137,21 +133,26 @@ aside {
     max-width: 300px;
     object-fit: contain;
     margin: 10px;
+    cursor:pointer;
 }
+
+.images:hover, figcaption:hover {
+    scale: 1.2;
+
+}
+
 .main-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     height: auto;
+    cursor: pointer;
 }
-
-
 
 figcaption{
     text-align: center;
 }
-
 
 .flex-container-images{
     display: flex;
@@ -163,9 +164,8 @@ figcaption{
 }
 
 .para{
-    justify-content: space-evenly;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    overflow-wrap: normal;
     gap: 2rem;
     text-align: center;
     background-color: #09541b;
@@ -174,17 +174,84 @@ figcaption{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-
-.iframe{
+iframe{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 1rem;
-
 }
 
+@media screen and (max-width: 1050px) {
+    .container-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "aside"
+            "main"
+            "footer";
+        margin: 0;
+    }
 
+    aside {
+        height: auto;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        margin: 0 15px;
+    }
+
+    .navbar {
+        margin: 0;
+        top: 0;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .navbar li {
+        margin: 0;
+        flex: 1 1 auto;
+        min-width: 100px;
+    }
+
+    .navbar li:hover {
+        transform: translateY(-2px);
+    }
+
+
+    .flex-container-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .para {
+        flex-direction: column;
+    }
+
+    .iframe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .images {
+        max-width: 80%;
+    }
+
+    .main-image {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
 
 
 
