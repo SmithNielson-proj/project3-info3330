@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Valheim's Mythological World</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400;500&display=swap">
+
 </head>
 
 
@@ -13,8 +15,8 @@
 <div id="wrapper">
 
         <header >
-            <div  class="header">
-                <h1>Valheim's Mythological World</h1>
+            <div  class="header-content">
+                <img src="images/logo3.jpg" alt="" width="230" height="104"><h1>Valheim's Mythological World</h1>
             </div>
         </header>
 
@@ -22,16 +24,33 @@
     <aside class="navbar">
         <nav>
             <button class="menuHomeBtn" onclick="openTab('homePane')" name="home">Home</button>
-            <button class="menuBtn" onclick="openTab('vidDetails')" name="Details">Details</button>
-            <button class="menuBtn" onclick="openTab('imgDetails')" name="Details">Details</button>
+            <button class="menuBtn" onclick="openTab('vidDetails')" name="Details">Video</button>
+            <button class="menuBtn" onclick="openTab('imgDetails')" name="Details">Images</button>
             <button class="menuBtn" onclick="openTab('contact')" name="Contact">Contact</button>
         </nav>
     </aside>
 
-
+<main>
     <section id="homePane" class="tab-pane">
 
-        <p>PANE 1</p>
+        <div class="content-container">
+
+            <div class="text-container">
+                <p>
+                    Valheim is a survival video game set in a procedurally generated open world, developed by Iron Gate Studio. Players take on the role of a fallen Viking warrior tasked with exploring a harsh, untamed landscape filled with forests, mountains, and oceans. The game emphasizes crafting, building, and combat as you gather resources, construct bases, and battle creatures like trolls, skeletons, and bosses tied to the game’s lore. It’s designed as the tenth world in a Norse-inspired universe, blending survival mechanics with a multiplayer co-op experience.
+
+
+                </p>
+                <p>
+                    The world of Valheim draws heavily from Norse mythology, connecting to the traditional Nine Worlds that sit within the branches of Yggdrasil, the World Tree. While not one of the classic realms like Midgard or Asgard, Valheim is imagined as an additional plane where the souls of warriors face trials against monstrous foes, echoing the struggles of gods and giants. Its biomes reflect influences from places like Niflheim’s icy mists and Muspelheim’s fiery chaos, while its bosses and creatures pull from tales of Norse legends, grounding the game in a mythic framework.
+
+
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="images/nine_realms_tree.png" alt="The Nine Worlds">
+            </div>
+        </div>
 
     </section>
 
@@ -39,15 +58,12 @@
 
     <section id="vidDetails" class="tab-pane" style="display:none">
 
-        <p>PANE 2</p>
+        <iframe width="720" height="405" src="https://www.youtube.com/watch?v=CRC8qpVt-qs?autoplay=1&mute=1controls=0&modestbranding=1&rel=0&iv_load_policy=3" allowfullscreen  ></iframe>
 
     </section>
 
 
-
-
-
-
+    
 
     <section id="imgDetails" class="tab-pane" style="display:none">
         <div class="flex-container-images">
@@ -65,9 +81,8 @@
                 <img src="images/midgard.jpg" class="images" alt="placeholder">
                 <figcaption>Midgard</figcaption>
             </figure>
-        </div>
 
-        <div class="flex-container-images">
+
             <figure>
                 <img src="images/placeholder.jpg" class="images" alt="placeholder">
                 <figcaption>Caption</figcaption>
@@ -85,11 +100,19 @@
 
     <section id="contact" class="tab-pane" style="display:none">
 
-        <p>PANE 4</p>
+        <p>Smith Nielson
+        <br>
+        10735328@uvu.edu
+        <br>
+        Utah Valley University
+        <br>
+            <a href="https://stupendous-unicorn-6ff76e.netlify.app/" target="_blank">My Website</a>
+        </p>
+
 
     </section>
 
-
+</main>
 
 
 
