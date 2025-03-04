@@ -1,0 +1,130 @@
+/* styles.css */
+
+/* Overall Grid Layout */
+#wrapper {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    gap: 10px;
+}
+
+/* Semantic Tag Styling */
+header {
+    grid-area: header;
+    background-color: #6f4e37; /* Coffee brown */
+    padding: 1rem;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content img {
+    max-width: 50px;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #e9ecef;
+    padding: 1rem;
+}
+
+main {
+    grid-area: main;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #6f4e37;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Menu Styling */
+.desktop-nav .nav-link {
+    color: #6f4e37;
+}
+
+.desktop-nav .nav-link.active {
+    background-color: #6f4e37;
+    color: white;
+}
+
+.tablet-nav {
+    display: none;
+}
+
+.tablet-nav .nav-link {
+    color: white;
+}
+
+.tablet-nav .nav-link.active {
+    background-color: #fff;
+    color: #6f4e37;
+}
+
+/* Section Content */
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+video {
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+/* Responsiveness for Tablet (768px) */
+@media (max-width: 768px) {
+    #wrapper {
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .tablet-nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .tablet-nav .nav-link {
+        margin: 0 0.5rem;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-content img {
+        margin-bottom: 0.5rem;
+    }
+}

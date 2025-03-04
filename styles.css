@@ -15,7 +15,7 @@ body {
     padding: 0;
 
 }
-.container-grid {
+.container-grid #wrapper {
     display: grid;
     margin-left: 15px;
     grid-template-rows: auto;
@@ -25,9 +25,16 @@ body {
         "aside main "
         "footer footer  ";
     min-height: 100vh;
-
-
+    gap: 10px;
 }
+.tab-main{
+    display: block;
+}
+.tab{
+    display: none;
+}
+
+
 .header {
     grid-area: header;
     text-align: center;
@@ -94,7 +101,7 @@ h2{
     text-align: center;
 }
 
-.navbar li {
+.navbar .menuBtn {
     border-radius: 5px;
     background: #2C3E50;
     margin: 10px 0px;
@@ -103,20 +110,13 @@ h2{
     box-shadow: 0 4px 8px #2A3526;
 }
 
-.navbar li:first-child {
-    margin-top: -5px;
 
-}
-.navbar li:last-child {
-    margin-bottom: -5px;
-}
-
-.navbar li:hover {
+.navbar .menuBtn:hover {
     background-color: #7a7666;
     transform: translateX(5px);
 }
 
-.navbar a {
+.navbar .menuBtn {
     color: #E0E0E0;
     text-decoration: none;
     display: block;
@@ -124,7 +124,7 @@ h2{
     padding: 5px;
 }
 
-.navbar a:hover {
+.navbar .menuBtn:hover {
     color: #ffffff;
 }
 
@@ -145,7 +145,7 @@ h2{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 30%;
     height: auto;
     cursor: pointer;
 }
@@ -192,66 +192,9 @@ iframe{
         margin: 0;
     }
 
-    aside {
-        height: auto;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        margin: 0 15px;
-    }
 
-    .navbar {
-        margin: 0;
-        top: 0;
-    }
-
-    .navbar ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .navbar li {
-        margin: 0;
-        flex: 1 1 auto;
-        min-width: 100px;
-    }
-
-    .navbar li:hover {
-        transform: translateY(-2px);
-    }
-
-
-    .flex-container-images {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .para {
-        flex-direction: column;
-    }
-
-    .iframe {
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    .images {
-        max-width: 80%;
-    }
-
-    .main-image {
-        width: 100%;
-    }
-
-    h1 {
-        font-size: 40px;
-    }
 }
+
 
 
 

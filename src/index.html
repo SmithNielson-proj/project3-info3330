@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8">
+    <title>Valheim's Mythological World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+<div id="wrapper">
+
+        <header >
+            <div  class="header">
+                <h1>Valheim's Mythological World</h1>
+            </div>
+        </header>
+
+
+    <aside class="navbar">
+        <nav>
+            <button class="menuHomeBtn" onclick="openTab('homePane')" name="home">Home</button>
+            <button class="menuBtn" onclick="openTab('vidDetails')" name="Details">Details</button>
+            <button class="menuBtn" onclick="openTab('imgDetails')" name="Details">Details</button>
+            <button class="menuBtn" onclick="openTab('contact')" name="Contact">Contact</button>
+        </nav>
+    </aside>
+
+
+    <section id="homePane" class="tab-pane">
+
+        <p>PANE 1</p>
+
+    </section>
+
+
+
+    <section id="vidDetails" class="tab-pane" style="display:none">
+
+        <p>PANE 2</p>
+
+    </section>
+
+
+
+
+
+
+
+    <section id="imgDetails" class="tab-pane" style="display:none">
+        <div class="flex-container-images">
+            <figure>
+                <img src="images/asgard.png" class="images" alt="placeholder">
+                <figcaption>Asgard</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/alfheim.jpg" class="images" alt="placeholder">
+                <figcaption>Alfheim</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/midgard.jpg" class="images" alt="placeholder">
+                <figcaption>Midgard</figcaption>
+            </figure>
+        </div>
+
+        <div class="flex-container-images">
+            <figure>
+                <img src="images/placeholder.jpg" class="images" alt="placeholder">
+                <figcaption>Caption</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/placeholder.jpg" class="images" alt="placeholder">
+                <figcaption>Caption</figcaption>
+            </figure>
+        </div>
+    </section>
+
+
+
+
+    <section id="contact" class="tab-pane" style="display:none">
+
+        <p>PANE 4</p>
+
+    </section>
+
+
+
+
+
+
+<footer  id="footer">
+    <p>&copy; 2025 My Website</p>
+</footer>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
