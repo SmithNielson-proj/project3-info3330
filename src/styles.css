@@ -135,7 +135,7 @@ aside nav button:hover {
 }
 
 .image-container img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 10px;
     border: 3px solid #8A2E2E;
