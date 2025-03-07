@@ -1,5 +1,8 @@
 
-
+// function that takes page tab name as an input
+//iterates through all pages with class name 'tab-pane' & sets display to none
+//after the for loop - it finds page tab that was sent on click & sets display to block
+// scrolls to top of page
 function openTab(pageName){
     let i;
     let x = document.getElementsByClassName("tab-pane");
@@ -7,6 +10,7 @@ function openTab(pageName){
         x[i].style.display = "none";
     }
     document.getElementById(pageName).style.display = "block";
+    window.scrollTo(0, 0);
 }
 
 

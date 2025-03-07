@@ -5,11 +5,11 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
     line-height: 1.6;
     border-radius: 15px;
     color: #E0D7C6;
-    background: linear-gradient(135deg, #1C2421 0%, #2F4533 50%, #2E2E2E 100%); /* Forest to dark pine to charcoal */
+    background: linear-gradient(135deg, #1C2421 0%, #2F4533 50%, #2E2E2E 100%);
     margin: 0;
     padding: 0;
 }
@@ -22,9 +22,10 @@ body {
         "aside main"
         "aside footer";
     min-height: 100vh;
-    gap: 10px;
-    margin: 10px;
+    gap: 20px;
+    margin: 15px;
 }
+
 main {
     grid-area: main;
     display: flex;
@@ -34,25 +35,28 @@ main {
 header  {
     grid-area: header;
     background-color:#2E2E2E;
-    padding: -5rem;
+    padding: 1rem;
+    margin-bottom: 10px;
     color: #E0D7C6;
     border-radius: 10px;
     border-bottom: 3px solid #8A2E2E;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
 h1 {
     text-align: center;
     font-size: 60px;
     font-family: 'Cinzel', sans-serif;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8), 0 0 20px rgba(217, 164, 4, 0.4);
     padding-left: 10px;
     font-variant: small-caps;
     color: #D9A404;
+    margin: 20px 0;
 }
+
 figcaption{
     color: #D9A404;
-
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
     font-size: 20px;
     background-color: #3A4242;
     border-radius: 15px;
@@ -62,11 +66,11 @@ figcaption{
 p{
     text-align: center;
     font-size: 18px;
-
     padding: 15px;
     border-radius: 15px;
 
 }
+
 aside {
     grid-area: aside;
     background-color: #2E2E2E;
@@ -85,7 +89,6 @@ aside nav {
 }
 
 aside nav button {
-
     width: 100%;
     padding: 15px;
     margin-top: 10px;
@@ -106,19 +109,21 @@ figure {
 
 footer {
     grid-area: footer;
-    background-color: #333;
-    color: white;
+    background-color: #2E2E2E;
+    color: #D9A404;
     padding: 1rem;
-    text-align: center;
     border-radius: 15px;
     border-top: 2px solid #D9A404;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    font-family: 'Roboto Slab', sans-serif;
 }
+
 aside nav button:hover {
     background-color: #8A2E2E;
     transform: translateX(5px);
+    color: #FFD700;
 }
-
-
 
 .home-container {
     align-items: center;
@@ -139,8 +144,10 @@ aside nav button:hover {
     height: auto;
     border-radius: 10px;
     border: 3px solid #8A2E2E;
-
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
 }
+
 iframe{
     border-radius: 15px;
     border: 3px solid #8A2E2E;
@@ -155,15 +162,18 @@ iframe{
     color: #E0D7C6;
     background-color: rgba(58, 66, 66, 0.8);
     border-radius: 15px;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
-    border: 1px solid #D9A404;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 2px solid #D9A404;
     margin: 5px;
+    padding: 10px;
 }
+
 .header-content {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
+
 .flex-container-images {
     display: flex;
     flex-direction: row;
@@ -172,15 +182,15 @@ iframe{
     padding: 1rem;
     flex-wrap: wrap;
 }
-.images {
 
+.images {
     max-width: 500px;
     object-fit: contain;
     cursor: pointer;
     border: 3px solid #8A2E2E;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-
 }
+
 .images:hover {
     transform: scale(1.5);
 }
@@ -188,7 +198,6 @@ iframe{
 .tab-pane {
     grid-area: main;
 }
-
 
     @media screen and (max-width: 768px) {
 
@@ -212,6 +221,7 @@ iframe{
             gap: 10px;
             width: 100%;
         }
+
         nav > img{
             max-width: 150px;
             align-self: center;
