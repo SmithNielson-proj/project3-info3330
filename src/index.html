@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta charset="UTF-8">
-    <title>Valheim's Mythological World</title>
+    <title>Valheim's Bosses</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400;500&display=swap">
 
@@ -12,44 +12,56 @@
 
 
 <body>
-<div id="wrapper">
+<div id="main-grid">
 
         <header >
             <div  class="header-content">
-                <img src="images/logo3.jpg" alt="" width="230" height="104"><h1>Valheim's Mythological World</h1>
+                <h1>Odin's Trials: The Bosses of Valheim</h1>
             </div>
         </header>
 
 
     <aside class="navbar">
         <nav>
-            <button class="menuHomeBtn" onclick="openTab('homePane')" name="home">Home</button>
-            <button class="menuBtn" onclick="openTab('vidDetails')" name="Details">Video</button>
-            <button class="menuBtn" onclick="openTab('imgDetails')" name="Details">Images</button>
-            <button class="menuBtn" onclick="openTab('contact')" name="Contact">Contact</button>
+            <img src="images/valheim-icon.png">
+            <button class="menuHomeBtn" onclick="openTab('homePane')">Home</button>
+            <button class="menuBtn" onclick="openTab('imgDetails')" >Bosses</button>
+            <button class="menuHomeBtn" onclick="openTab('moreImgsPane')">More Images</button>
+            <button class="menuBtn" onclick="openTab('vidDetails')">Video</button>
+            <button class="menuBtn" onclick="openTab('contact')">Contact</button>
         </nav>
     </aside>
 
 <main>
     <section id="homePane" class="tab-pane">
 
-        <div class="content-container">
+        <div class="home-container">
 
             <div class="text-container">
+
                 <p>
-                    Valheim is a survival video game set in a procedurally generated open world, developed by Iron Gate Studio. Players take on the role of a fallen Viking warrior tasked with exploring a harsh, untamed landscape filled with forests, mountains, and oceans. The game emphasizes crafting, building, and combat as you gather resources, construct bases, and battle creatures like trolls, skeletons, and bosses tied to the game’s lore. It’s designed as the tenth world in a Norse-inspired universe, blending survival mechanics with a multiplayer co-op experience.
+                    Valheim is a savage survival saga in a Norse-inspired open world.
+                    As a Viking warrior, I’ve carved my path through its deadly biomes,
+                    taking down five of its six legendary bosses: Eikthyr, The Elder, Bonemass, Moder, and Yagluth.
+                    The sixth, a mystery I’ve yet to conquer, looms ahead. This site shows my epic journey with my friends
+                    through these brutal boss fights.
 
 
                 </p>
-                <p>
+
+
+               <!-- <p>
                     The world of Valheim draws heavily from Norse mythology, connecting to the traditional Nine Worlds that sit within the branches of Yggdrasil, the World Tree. While not one of the classic realms like Midgard or Asgard, Valheim is imagined as an additional plane where the souls of warriors face trials against monstrous foes, echoing the struggles of gods and giants. Its biomes reflect influences from places like Niflheim’s icy mists and Muspelheim’s fiery chaos, while its bosses and creatures pull from tales of Norse legends, grounding the game in a mythic framework.
 
-
-                </p>
+                </p> -->
             </div>
             <div class="image-container">
-                <img src="images/nine_realms_tree.png" alt="The Nine Worlds">
+                <figure>
+                    <img src="images/valheim-house.jpg" alt="Photo of Greg">
+                    <figcaption> </figcaption>
+                </figure>
             </div>
+
         </div>
 
     </section>
@@ -58,7 +70,7 @@
 
     <section id="vidDetails" class="tab-pane" style="display:none">
 
-        <iframe width="720" height="405" src="https://www.youtube.com/watch?v=CRC8qpVt-qs?autoplay=1&mute=1controls=0&modestbranding=1&rel=0&iv_load_policy=3" allowfullscreen  ></iframe>
+        <iframe width="720" height="405" src="https://www.youtube.com/watch?v=sjnrJLRpDYU?autoplay=1&mute=1controls=0&modestbranding=1&rel=0&iv_load_policy=3" allowfullscreen  ></iframe>
 
     </section>
 
@@ -66,37 +78,88 @@
     
 
     <section id="imgDetails" class="tab-pane" style="display:none">
-        <div class="flex-container-images">
+
+        <div class="text-container">
+            <p>Valheim’s six brutal bosses guard its harshest realms. After each grueling victory,
+                we haul their trophies back to the stone altar at the world’s heart,
+                claiming their power as our own. From Eikthyr’s thundering antlers to Yagluth’s
+                charred skull, these are the spoils of our blood-soaked triumphs—captured in the
+                shots below as my crew revels in the glory of the hunt. With one final boss ahead of us
+                the fate of the Valheim world rests in our hands.
+            </p>
+
+        </div>
+
+
+
+
+            <div class="flex-container-images">
             <figure>
-                <img src="images/asgard.png" class="images" alt="placeholder">
-                <figcaption>Asgard</figcaption>
+                <img src="images/bonemass.png"  class="images" alt="Bonemass">
+                <figcaption>Bonemass</figcaption>
             </figure>
 
             <figure>
-                <img src="images/alfheim.jpg" class="images" alt="placeholder">
-                <figcaption>Alfheim</figcaption>
+                <img src="images/moder.png" class="images" alt="Moder">
+                <figcaption>Moder</figcaption>
             </figure>
 
             <figure>
-                <img src="images/midgard.jpg" class="images" alt="placeholder">
-                <figcaption>Midgard</figcaption>
-            </figure>
-
-
-            <figure>
-                <img src="images/placeholder.jpg" class="images" alt="placeholder">
-                <figcaption>Caption</figcaption>
+                <img src="images/yagluth.jpg" class="images" alt="yagluth">
+                <figcaption>Yagluth</figcaption>
             </figure>
 
             <figure>
-                <img src="images/placeholder.jpg" class="images" alt="placeholder">
-                <figcaption>Caption</figcaption>
+                <img src="images/queen.jpg" class="images" alt="queen">
+                <figcaption>The Queen</figcaption>
             </figure>
+
+            <figure>
+                <img src="images/ashlands_boss.jpg" class="images" alt="Ashlands">
+                <figcaption>Ashlands Boss Spawn</figcaption>
+            </figure>
+
+
         </div>
     </section>
 
 
+    <section id="moreImgsPane" class="tab-pane" style="display:none">
 
+        <div class="text-container">
+            <p> A few images from throughout our journey
+            </p>
+        </div>
+
+        <div class="flex-container-images">
+            <figure>
+                <img src="images/hottub.jpg"  class="images" alt="hottub">
+                <figcaption>relaxing in the hottub with the gang</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/old_house.jpg" class="images" alt="Greg at home">
+                <figcaption>greg</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/hell.jpg" class="images" alt="Ashlands">
+                <figcaption>Crossing the Ashlands</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/greg_jr.jpg" class="images" alt="greg with chickens">
+                <figcaption>Spending quality time with the kids</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/odin.png" class="images" alt="odin">
+                <figcaption>Odin keeping an eye on me</figcaption>
+            </figure>
+
+
+        </div>
+    </section>
 
     <section id="contact" class="tab-pane" style="display:none">
 
@@ -108,7 +171,11 @@
         <br>
             <a href="https://stupendous-unicorn-6ff76e.netlify.app/" target="_blank">My Website</a>
         </p>
-
+        <div class="image-container">
+                <figure>
+                    <img src="images/greg.jpg" alt="Photo of Greg">
+                    <figcaption> </figcaption>
+                </figure>
 
     </section>
 
