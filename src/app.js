@@ -14,7 +14,23 @@ function openTab(pageName){
 }
 
 
+const darkModeToggle = document.getElementById("darkModeToggle");
+let mainCss = true;
+let darkModeLink = null;
 
+darkModeToggle.addEventListener("click", function(){
+
+    if (darkModeToggle && document.head.contains(darkModeLink) !== true) {
+        darkModeLink = document.createElement("link");
+        darkModeLink .rel = "stylesheet";
+        darkModeLink.href = 'css/dark.css';
+        darkModeLink.id = "darkModeLink";
+        document.head.appendChild(darkModeLink);
+    }else{
+        darkModeLink.remove();
+    }
+    mainCss = !mainCss;
+});
 
 
 
