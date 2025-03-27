@@ -1,9 +1,48 @@
 
+#main-grid {
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+        "header aside "
+        "main aside"
+        "footer aside";
+}
 body {
-    background-color: white;
-    color: green;
+    background: linear-gradient(135deg, #0A110F 0%, #1A2B22 50%, #171717 100%);
+    color: #C0C0C0;
+}
+h1 {
+    color: #D4D4D4;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 212, 212, 0.4);
+}
+header, aside, footer {
+    background-color: #171717;
+    color: #E0D7C6;
+    border-color:#480606;;
+}
+aside nav button {
+    background-color: #1A2B22;
+    color: #D4D4D4;
+}
+aside nav button:hover {
+    background-color: #480606;
+    color: #D4D4D4;
 }
 
-h1{
-    color: pink;
+figcaption{
+    color:#D4D4D4;
 }
+
+aside {
+    border-left: 2px solid #480606;
+    border-right: none;
+}
+
+
+.text-container{
+    border: 3px solid #644d05;
+    box-shadow: 0 4px 4px #797979;
+}
+.images, header{
+    box-shadow: 0 4px 4px #797979;
+}
+

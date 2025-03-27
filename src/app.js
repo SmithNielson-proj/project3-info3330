@@ -20,6 +20,7 @@ let darkModeLink = null;
 
 darkModeToggle.addEventListener("click", function(){
 
+    // if darkmode is toggled and the head DOES NOT contain dark mode css file
     if (darkModeToggle && document.head.contains(darkModeLink) !== true) {
         darkModeLink = document.createElement("link");
         darkModeLink .rel = "stylesheet";
