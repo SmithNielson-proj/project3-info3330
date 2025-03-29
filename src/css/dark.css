@@ -1,4 +1,8 @@
-
+/*
+My @media sizes werent working on 'dark mode', In order for them to work
+properly I had to move them over to this stylesheet, thats the only copied code
+from main.css
+ */
 #main-grid {
     grid-template-columns: 1fr 200px;
     grid-template-areas:
@@ -44,5 +48,61 @@ aside {
 }
 .images, header{
     box-shadow: 0 4px 4px #797979;
+}
+
+@media screen and (max-width: 768px) {
+
+    #main-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "footer";
+        min-height: 100vh;
+        gap: 10px;
+        margin: 10px;
+    }
+
+    .home-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav > img{
+        max-width: 150px;
+        align-self: center;
+    }
+}
+@media screen and (max-width: 480px) {
+    #main-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+                "header"
+                 "aside"
+                 "main"
+                "footer";
+        gap: 5px;
+        margin: 5px;
+    }
+    main {
+        padding: 5px;
+        flex-direction: column;
+    }
+    p, figcaption {
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+    .image-container img, iframe, .images {
+        max-width: 100%;
+
+    }
 }
 
