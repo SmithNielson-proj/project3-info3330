@@ -2,6 +2,7 @@
 My @media sizes werent working on 'dark mode', In order for them to work
 properly I had to move them over to this stylesheet, thats the only copied code
 from main.css
+
  */
 #main-grid {
     grid-template-columns: 1fr 200px;

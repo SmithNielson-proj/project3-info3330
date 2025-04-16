@@ -1,14 +1,7 @@
-
 // function that takes page tab name as an input
 //iterates through all pages with class name 'tab-pane' & sets display to none
 //after the for loop - it finds page tab that was sent on click & sets display to block
 // scrolls to top of page
-
-
-
-
-/* THIS IS A TEST FILE*/
-
 function openTab(pageName){
     let i;
     let x = document.getElementsByClassName("tab-pane");
@@ -39,20 +32,3 @@ darkModeToggle.addEventListener("click", function(){
     mainCss = !mainCss;
 });
 
-
-
-let form=null;
-let successMsg=null;
-function initValidation(formId, successId) {
-
-    form = document.getElementById(formId);
-    successMsg = document.getElementById(successId);
-
-    let inputs = document.querySelectorAll("input");
-    for (input of inputs) {
-
-        input.addEventListener("change", inputChanged );
-    }
-    form.addEventListener("submit", submitForm );
-
-}
