@@ -202,6 +202,77 @@ iframe{
     grid-area: main;
 }
 
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+
+.flex li {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.errorMsg{
+    color: red;
+}
+
+/* THIS IS JUST FOR THE CHECKBOX SECTION AND BELOW ON THE FORM */
+.flex li input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.flex li input[type="checkbox"] + label {
+    margin-right: 20px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+
+.flex li:nth-child(10),
+.flex li:nth-child(11),
+.flex li:nth-child(12),
+.flex li:nth-child(13) {
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+#visitorsForm{
+    background-color: #969696;
+
+    padding: 10px 20px;
+}
+
+label, h2 {
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Cinzel', sans-serif;
+    text-shadow: 3px 3px 6px rgba(217, 164, 4, 0.4), 0 0 20px rgba(0, 0, 0, 0.8);
+
+    font-variant: small-caps;
+    color: black;
+
+}
+
+
+
+
+
+
+
     @media screen and (max-width: 768px) {
 
         #main-grid {
