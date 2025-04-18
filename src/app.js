@@ -1,13 +1,4 @@
-
-// function that takes page tab name as an input
-//iterates through all pages with class name 'tab-pane' & sets display to none
-//after the for loop - it finds page tab that was sent on click & sets display to block
-// scrolls to top of page
-
-
-
-
-/* THIS IS A TEST FILE*/
+/* THIS IS NOW A TEST FILE & is not referenced in the index.html */
 
 function openTab(pageName){
     let i;

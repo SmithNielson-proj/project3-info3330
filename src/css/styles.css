@@ -251,20 +251,38 @@ iframe{
 }
 
 #visitorsForm{
-    background-color: #969696;
-
+    background-color: #374240;
+    border: 3px solid #8A2E2E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     padding: 10px 20px;
 }
 
 label, h2 {
     text-align: left;
     font-size: 20px;
-    font-family: 'Cinzel', sans-serif;
-    text-shadow: 3px 3px 6px rgba(217, 164, 4, 0.4), 0 0 20px rgba(0, 0, 0, 0.8);
+    font-family: 'Roboto Slab', sans-serif;
+
 
     font-variant: small-caps;
     color: black;
 
+}
+
+input.was-validated:invalid {
+    color: red;
+    border: 1px solid red;
+}
+
+input.was-validated:invalid ~ div {
+    display: block;
+}
+
+input:valid ~ div {
+    display: none;
+}
+
+input:invalid ~ div {
+    display: none;
 }
 
 
